@@ -24,10 +24,11 @@ namespace igl
 //   K  #R*dim by #V
 void arap_precompute(
   const Eigen::MatrixXd & V,
-  const Eigen::MatrixXi & F,
+  const Eigen::MatrixXi & E,
   const Eigen::VectorXi & b,
   igl::min_quad_with_fixed_data<double> & data,
-  Eigen::SparseMatrix<double> & K);
+  Eigen::SparseMatrix<double> & K, 
+  int mode);
 
 #endif
 
